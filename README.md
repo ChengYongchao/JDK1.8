@@ -19,7 +19,7 @@ JDK源码阅读整理 持续更新
 	- [源码解析](https://github.com/ChengYongchao/JDK1.8/blob/master/src/java/util/Stack.java)
 - HashSet
 	- [博客](https://blog.csdn.net/a936687045/article/details/102839769)
-	- [源码解析](https://github.com/ChengYongchao/JDK1.8/blob/master/src/java/util/Stack.java)
+	- [源码解析](https://github.com/ChengYongchao/JDK1.8/blob/master/src/java/util/HashSet.java)
 
 - TreeSet
 	- [博客](https://blog.csdn.net/a936687045/article/details/102858922)
