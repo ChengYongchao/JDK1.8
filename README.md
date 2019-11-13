@@ -29,3 +29,6 @@ JDK源码阅读整理 持续更新
 	- [博客](https://blog.csdn.net/a936687045/article/details/102914706)
 	- [源码解析](https://github.com/ChengYongchao/JDK1.8/blob/master/src/java/util/Map.java)
 
+- HashMap
+	- [博客]( https://blog.csdn.net/a936687045/article/details/102956243 )
+	- [源码解析](https://github.com/ChengYongchao/JDK1.8/blob/master/src/java/util/HashMap.java)
