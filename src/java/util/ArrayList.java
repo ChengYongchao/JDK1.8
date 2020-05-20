@@ -19,13 +19,13 @@ public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAcce
     private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
 
     /*
-     * ==> 官方说明：存储ArrayList元素的数组缓冲区。ArrayList的容量是这个数组缓冲区的长度。
-     * ==>当添加第一个元素时，任何带有elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
-     * ==>的空ArrayList将被扩展为 DEFAULT_CAPACITY。
-     * ==>个人理解：当使用无参构造函数创建ArrayList时，此时的elementData会等于
+     * 官方说明：存储ArrayList元素的数组缓冲区。ArrayList的容量是这个数组缓冲区的长度。
+     * 当添加第一个元素时，任何带有elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+     * 的空ArrayList将被扩展为 DEFAULT_CAPACITY。
+     * 个人理解：当使用无参构造函数创建ArrayList时，此时的elementData会等于
      * DEFAULTCAPACITY_EMPTY_ELEMENTDATA
-     * ==>当添加元素时，通过ensureCapacityInternal()—>calculateCapacity()会初始化数组，
-     * ==>数组大小为DEFAULT_CAPACITY
+     * 当添加元素时，通过ensureCapacityInternal()—>calculateCapacity()会初始化数组，
+     * 数组大小为DEFAULT_CAPACITY
      */
     transient Object[] elementData; // 非私有以简化嵌套类访问
 
