@@ -413,12 +413,13 @@ public class HashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Clone
          */
         if (oldCap > 0)
         {
-            // 如果oldcap大于最大值，阈值直接等于int最大值，以后不会再扩容，否则 阈值扩大二倍
+            // 如果oldcap大于最大值，阈值直接等于int最大值，当前resize操作执行不了直接返回，以后也不会再扩容
             if (oldCap >= MAXIMUM_CAPACITY)
             {
                 threshold = Integer.MAX_VALUE;
                 return oldTab;
             }
+            // 新容量为原来的二倍
             else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY && oldCap >= DEFAULT_INITIAL_CAPACITY)
                 newThr = oldThr << 1; // double threshold
         }
